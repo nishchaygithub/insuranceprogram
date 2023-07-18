@@ -33,11 +33,9 @@ class universalinsurance
 {
 private:
 #define CURRENT_YEAR 2023
-
-    double rateForOldVehicle = 2.0; // Premium rate for vehicles aged between 5 and 15 years (2%)
-    double rateForNewVehicle = 0.0; // Premium rate for vehicles aged less than or equal to 2 years (0%)
-    double premiumGreen = 15000;    // Additional premium for vehicles aged less than 1 year
-
+#define rateForOldVehicle 2.0 
+#define rateForNewVehicle  0.0 
+#define premiumGreen  15000    
 public:
     void calculatePremium(VehicleType vehicleType, int vehiclePrice, int purchaseYear)
     {
